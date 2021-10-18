@@ -6,10 +6,13 @@ import { HomeComponent } from './home.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent, children:[
-    {path:'',component:LoginComponent}
-  ]},
-  {path:'novousuario', component: NovoUsuarioComponent}
-];
+    {path:'',component:LoginComponent},
+    {path:'novousuario', component: NovoUsuarioComponent}
+  ],
+},
+]
+  
+ 
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
